@@ -3,7 +3,6 @@ import 'package:cbnits_assessment/model/products_model.dart';
 import 'package:cbnits_assessment/services/product_services.dart';
 import 'package:flutter/material.dart';
 
-import 'cart.dart';
 
 class ProductList extends StatefulWidget {
   final String product;
@@ -17,6 +16,7 @@ class ProductList extends StatefulWidget {
 class _ProductListState extends State<ProductList> {
   Future<List<ProductsModel>> future;
   bool isAddedToCart = false;
+  int count;
 
   @override
   void initState() {
